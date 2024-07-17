@@ -30,10 +30,10 @@ Ensure you have the following installed on your system:
 
 5. This step will load the training data from train.csv, split it into four datasets, and store it in an SQLite database.
 
-	`sh python3 src/data_processing.py`
+	`python3 src/data_processing.py`
 
 6. This step will read the data from the SQLite database and generate visualizations, saving the output to data_visualization.html.
 
-	`sh python3 src/main.py`
+	`python3 src/main.py`
 
 7. Open the data_visualization.html file in your web browser to see the visualizations.
