@@ -31,7 +31,7 @@ Ensure you have the following installed on your system:
 
 2. Create a Virtual Environment:
 
-'''python3 -m venv venv
+python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 3. Install Dependencies:
@@ -41,11 +41,11 @@ pip install -r requirements.txt
 
 5. This step will load the training data from train.csv, split it into four datasets, and store it in an SQLite database.
 
-```sh python3 src/data_processing.py
+sh python3 src/data_processing.py
 
 6. This step will read the data from the SQLite database and generate visualizations, saving the output to data_visualization.html.
 
-```sh python3 src/main.py
+sh python3 src/main.py
 
 7. Before running the scripts, make sure the data.db is cleared
 
