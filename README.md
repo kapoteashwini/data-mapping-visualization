@@ -31,11 +31,11 @@ Ensure you have the following installed on your system:
 
 2. Create a Virtual Environment:
 
-python3 -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+	`python3 -m venv venv`
+	`source venv/bin/activate`  # On Windows use `venv\Scripts\activate`
 
 3. Install Dependencies:
-pip install -r requirements.txt
+	`pip install -r requirements.txt`
 
 4. Before running the scripts, make sure the data.db is cleared
 
@@ -47,6 +47,4 @@ pip install -r requirements.txt
 
 	`sh python3 src/main.py`
 
-7. Before running the scripts, make sure the data.db is cleared
-
-8. Open the data_visualization.html file in your web browser to see the visualizations.
+7. Open the data_visualization.html file in your web browser to see the visualizations.
