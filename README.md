@@ -2,17 +2,6 @@
 
 This project processes training data, stores it in an SQLite database, and generates visualizations using Bokeh.
 
-## Project Structure
-
-├── data
-│ └── train.csv
-├── src
-│ ├── data_processing.py
-│ ├── main.py
-│ └── visualization.py
-├── data.db
-└── README.md
-
 ## Prerequisites
 
 Ensure you have the following installed on your system:
