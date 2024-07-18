@@ -13,25 +13,20 @@ def create_plot(train_df, ideal_df, best_funcs, title):
 
 def visualize_data(train_data, ideal_functions, best_funcs_train, matched_data):
   print("Starting data visualization...")
-  
   plot1 = create_plot(train_data, ideal_functions, best_funcs_train, 'Training Data and Ideal Functions')
-
   # Create a plot for matched test data
   print("Creating plot for matched test data...")
   p_test = figure(title='Matched Test Data', x_axis_label='X', y_axis_label='Y')
   p_test.scatter(matched_data['X'], matched_data['Y'], size=8, color='red', legend_label='Test Data')
   for best_func in best_funcs_train:
       p_test.line(ideal_functions['X'], ideal_functions[best_func], legend_label=best_func, line_width=2, line_dash='dashed')
-
   # Arrange plots in a grid
   print("Arranging plots in a grid...")
   grid = gridplot([[plot1], [p_test]])
-
   # Save and show the plots
   output_file("data_visualization.html", mode='inline')
   print("Saving visualization to data_visualization.html...")
   show(grid)
-  
   print("Visualization completed and saved to data_visualization.html")
 
 # Example usage (this part is for testing purposes, remove when integrating with main.py)
